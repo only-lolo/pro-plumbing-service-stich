@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | Pro Plumbing Service & Repair | Miami, FL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#000924","on-primary": "#ffffff","primary-container": "#0f2044","on-primary-container": "#7988b2",
+          "secondary": "#9d4300","on-secondary": "#ffffff","secondary-container": "#fd761a","on-secondary-container": "#5c2400",
+          "surface": "#fbf8fc","surface-bright": "#fbf8fc","surface-container-lowest": "#ffffff","surface-container-low": "#f5f3f6",
+          "surface-container": "#efedf1","surface-container-high": "#e9e7eb","on-surface": "#1b1b1e","on-surface-variant": "#45464e",
+          "outline": "#75777f","outline-variant": "#c5c6cf","background": "#fbf8fc","on-background": "#1b1b1e",
+        },
+        spacing: { "margin-desktop": "48px","margin-mobile": "16px","gutter": "24px","container-max": "1200px","base": "8px" },
+        fontFamily: { sans: ["Inter","sans-serif"] },
+        fontSize: {
+          "display-lg-mobile": ["32px",{lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"800"}],
+          "headline-md": ["30px",{lineHeight:"1.3",fontWeight:"700"}],
+          "headline-sm": ["24px",{lineHeight:"1.4",fontWeight:"700"}],
+          "body-lg": ["18px",{lineHeight:"1.6",fontWeight:"400"}],
+          "body-md": ["16px",{lineHeight:"1.6",fontWeight:"400"}],
+          "label-md": ["14px",{lineHeight:"20px",letterSpacing:"0.05em",fontWeight:"600"}],
+          "label-sm": ["12px",{lineHeight:"16px",fontWeight:"600"}],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .icon-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  @keyframes pulse-ring { 0%,100%{box-shadow:0 0 0 0 rgba(253,118,26,0.5)} 50%{box-shadow:0 0 0 10px rgba(253,118,26,0)} }
+  .pulse { animation: pulse-ring 2s infinite; }
+  .glass-card { background: rgba(255,255,255,0.7); backdrop-filter: blur(10px); border: 1px solid rgba(226,232,240,0.5); box-shadow: 0 4px 20px rgba(15,23,42,0.05); }
+</style>
+</head>
+<body class="bg-background text-on-background font-sans antialiased min-h-screen flex flex-col">
+
+<!-- Emergency Bar -->
+<div class="bg-secondary-container text-on-secondary-container text-sm font-semibold py-2 px-4 text-center">
+  ⚡ 24/7 Emergency Plumbing — <a href="tel:3059647399" class="underline font-bold">(305) 964-7399</a>
+</div>
+
+<!-- Nav -->
+<header class="bg-surface shadow-sm sticky top-0 z-50">
+  <div class="max-w-container-max mx-auto px-margin-desktop h-[72px] flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="material-symbols-outlined text-secondary-container text-[32px]">plumbing</span>
+      <div>
+        <div class="font-bold text-lg leading-tight text-primary">Pro Plumbing</div>
+        <div class="text-xs text-on-surface-variant leading-tight">Service & Repair · Miami, FL</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-on-surface-variant hover:text-secondary transition-colors text-label-md">Home</a>
+      <a href="services.html" class="text-on-surface-variant hover:text-secondary transition-colors text-label-md">Services</a>
+      <a href="contact.html" class="text-secondary font-bold border-b-2 border-secondary-container pb-1 text-label-md">Contact</a>
+      <a href="tel:3059647399" class="pulse bg-secondary-container text-on-secondary-container px-5 py-2.5 rounded-full font-bold text-label-md flex items-center gap-2">
+        <span class="material-symbols-outlined text-[18px]">call</span>(305) 964-7399
+      </a>
+    </nav>
+    <button class="md:hidden text-on-surface" onclick="document.getElementById('mob').classList.toggle('hidden')">
+      <span class="material-symbols-outlined text-[28px]">menu</span>
+    </button>
+  </div>
+  <div id="mob" class="hidden md:hidden bg-surface border-t border-outline-variant px-margin-mobile pb-4">
+    <a href="index.html" class="block py-3 text-on-surface-variant">Home</a>
+    <a href="services.html" class="block py-3 text-on-surface-variant">Services</a>
+    <a href="contact.html" class="block py-3 text-secondary font-bold">Contact</a>
+    <a href="tel:3059647399" class="block mt-2 bg-secondary-container text-on-secondary-container text-center py-3 rounded-lg font-bold">Call (305) 964-7399</a>
+  </div>
+</header>
+
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-desktop py-16 md:py-24 space-y-20">
+
+  <!-- Page Header -->
+  <section class="text-center max-w-3xl mx-auto">
+    <h1 class="text-display-lg-mobile text-primary mb-6">How can we help?</h1>
+    <p class="text-body-lg text-on-surface-variant">We're here to provide reliable, professional plumbing services. Reach out to our Miami office or request emergency assistance 24/7.</p>
+  </section>
+
+  <!-- Location + Contact Cards -->
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Map image -->
+    <div class="md:col-span-2 glass-card rounded-xl overflow-hidden h-80 relative group">
+      <img alt="Map of Miami — Pro Plumbing Service and Repair location" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtodGIOW7DzuPrfY_HBiDd7_3WBOeYztWd77U3hzPMFE49TWOuzg9V2E302z4Qr_u7DxgRhqb7e6NGRTiJn8ZQ47hrI-9_fs0UpURLgjyAnB5nHsnJktdGHTaKcG-CjHn8O3_Wn0Gp84DCizZ_7uKHbaJz8BaMggjJpixdHvNr_koxei0kKVD5_TzS4mha06j4GsV149wVxM3N15e9v_OEkq_62L2AZjLe4mDfDURiIOB4D7BqFTBqEinwLNUqXAJ_M-qmZtXl4lyv"/>
+      <div class="absolute bottom-5 left-5 right-5 bg-surface-container-lowest p-5 rounded-lg shadow-md border border-outline-variant flex items-start gap-4">
+        <span class="material-symbols-outlined text-secondary-container text-3xl">location_on</span>
+        <div>
+          <h3 class="font-bold text-primary mb-1">Miami Office</h3>
+          <p class="text-on-surface-variant text-body-md">14228 SW 136th St, Miami, FL 33186</p>
+          <p class="text-on-surface-variant text-sm mt-1">Serving all of Miami-Dade County</p>
+        </div>
+      </div>
+    </div>
+    <!-- Call + Hours -->
+    <div class="space-y-4 flex flex-col">
+      <div class="glass-card rounded-xl p-7 flex-1 flex flex-col justify-center hover:-translate-y-1 transition-transform duration-300">
+        <div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-secondary-container">call</span>
+        </div>
+        <h3 class="font-bold text-primary mb-1">Call Us</h3>
+        <p class="text-on-surface-variant text-sm mb-3">Available 24/7 for emergencies.</p>
+        <a href="tel:3059647399" class="font-bold text-secondary-container text-lg hover:text-secondary transition-colors">(305) 964-7399</a>
+      </div>
+      <div class="glass-card rounded-xl p-7 flex-1 flex flex-col justify-center hover:-translate-y-1 transition-transform duration-300">
+        <div class="w-12 h-12 bg-surface-container rounded-full flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-secondary-container">schedule</span>
+        </div>
+        <h3 class="font-bold text-primary mb-1">Hours</h3>
+        <p class="text-on-surface-variant text-sm">Mon–Fri: 7:00 AM – 8:00 PM</p>
+        <p class="text-on-surface-variant text-sm">Sat–Sun: 8:00 AM – 6:00 PM</p>
+        <p class="text-secondary-container font-semibold text-sm mt-2">Emergency: 24/7</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Banner -->
+  <section class="bg-secondary-container text-on-secondary-container rounded-xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-md">
+    <div class="flex items-center gap-6">
+      <div class="w-16 h-16 bg-surface-container-lowest rounded-full flex items-center justify-center shrink-0 shadow-sm">
+        <span class="material-symbols-outlined text-secondary-container text-4xl icon-fill">emergency</span>
+      </div>
+      <div>
+        <h2 class="text-headline-md font-bold mb-1 text-on-secondary-container">24/7 Emergency Service</h2>
+        <p class="text-on-secondary-container/80 text-body-md">Burst pipe? Overflowing drain? We dispatch immediately, day or night.</p>
+      </div>
+    </div>
+    <a href="tel:3059647399" class="pulse bg-surface-container-lowest text-primary h-14 px-8 rounded-lg font-bold text-label-md hover:bg-surface-container transition-colors whitespace-nowrap shadow-sm border border-outline-variant flex items-center gap-2">
+      <span class="material-symbols-outlined">call</span>Call Emergency Line
+    </a>
+  </section>
+
+  <!-- Contact Form + Image -->
+  <section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+    <div class="space-y-6">
+      <h2 class="text-display-lg-mobile text-primary">Send us a message</h2>
+      <p class="text-body-lg text-on-surface-variant">Fill out the form and our team will get back to you within 1 hour to schedule a consultation or service visit.</p>
+      <div class="h-64 rounded-xl overflow-hidden border border-outline-variant">
+        <img alt="Pro Plumbing professional plumber with tablet" class="w-full h-full object-cover"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRqRsdxbEwUlJd22n2x-DSzNKXwS5av8gDzGhbjGkjzJGB13kgll0vpCvBNs52yDZd___mxjUW6D0Tw1U6H7cjmeT56wTk21Ybh8wlDfbezclho6pZYEMnJwxpU6OxmKAarRZscGbRPqUgY6dp5Eb5YYyGYTKffZ-cWF0EInvmqn517wSKiBKT5kwr6vSeVVb1JneZtF88q4B8Z1annl72Bzszfdjvd-DA0moAZ8xHGqpUrq1btDlGPg6i9BZ1Bsk18AKps1b_v-2v"/>
+      </div>
+      <!-- Service Area Tags -->
+      <div>
+        <p class="font-semibold text-on-surface mb-3">Service Area — Miami-Dade County</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full text-sm border border-outline-variant">Miami</span>
+          <span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full text-sm border border-outline-variant">Kendall</span>
+          <span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full text-sm border border-outline-variant">Homestead</span>
+          <span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full text-sm border border-outline-variant">Hialeah</span>
+          <span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full text-sm border border-outline-variant">Doral</span>
+          <span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full text-sm border border-outline-variant">Coral Gables</span>
+          <span class="bg-surface-container text-on-surface-variant px-3 py-1 rounded-full text-sm border border-outline-variant">South Miami</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="glass-card p-8 md:p-10 rounded-xl">
+      <form class="space-y-5" onsubmit="handleSubmit(event)">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="space-y-1">
+            <label class="text-label-sm text-on-surface font-semibold" for="firstName">First Name</label>
+            <input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 text-body-md text-on-surface focus:ring-2 focus:ring-secondary-container focus:border-secondary-container outline-none transition-shadow" id="firstName" placeholder="Adrian" type="text" required/>
+          </div>
+          <div class="space-y-1">
+            <label class="text-label-sm text-on-surface font-semibold" for="lastName">Last Name</label>
+            <input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 text-body-md text-on-surface focus:ring-2 focus:ring-secondary-container focus:border-secondary-container outline-none transition-shadow" id="lastName" placeholder="Smith" type="text" required/>
+          </div>
+        </div>
+        <div class="space-y-1">
+          <label class="text-label-sm text-on-surface font-semibold" for="phone">Phone Number</label>
+          <input class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 text-body-md text-on-surface focus:ring-2 focus:ring-secondary-container focus:border-secondary-container outline-none transition-shadow" id="phone" placeholder="(305) 000-0000" type="tel" required/>
+        </div>
+        <div class="space-y-1">
+          <label class="text-label-sm text-on-surface font-semibold" for="service">Service Needed</label>
+          <select class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 text-body-md text-on-surface focus:ring-2 focus:ring-secondary-container outline-none" id="service">
+            <option value="">Select a service...</option>
+            <option>Emergency Plumbing</option>
+            <option>Water Heater Repair / Installation</option>
+            <option>Leak Detection & Repair</option>
+            <option>Drain Cleaning</option>
+            <option>Pipe Repair / Replacement</option>
+            <option>Toilet & Fixture Repair</option>
+            <option>Sewer Line Services</option>
+            <option>Other / General Inquiry</option>
+          </select>
+        </div>
+        <div class="space-y-1">
+          <label class="text-label-sm text-on-surface font-semibold" for="message">Describe the Issue</label>
+          <textarea class="w-full bg-surface-container-lowest border border-outline-variant rounded-lg px-4 py-3 text-body-md text-on-surface focus:ring-2 focus:ring-secondary-container outline-none resize-none" id="message" placeholder="Tell us what's going on and we'll provide a free estimate..." rows="4"></textarea>
+        </div>
+        <button id="submitBtn" class="w-full bg-primary-container text-on-primary h-14 rounded-lg font-bold text-label-md hover:opacity-90 transition-opacity flex items-center justify-center gap-2" type="submit">
+          <span class="material-symbols-outlined">send</span>Request Free Estimate
+        </button>
+        <p class="text-on-surface-variant text-xs text-center">We respond within 1 hour · No spam, ever</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary-container text-on-primary-container py-10 px-margin-desktop mt-auto">
+  <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="font-bold text-headline-sm text-on-primary flex items-center gap-2">
+      <span class="material-symbols-outlined">plumbing</span> Pro Plumbing
+    </div>
+    <div class="text-sm text-on-primary/70 text-center">© 2026 Pro Plumbing Service and Repair Inc. · 14228 SW 136th St, Miami, FL 33186</div>
+    <nav class="flex gap-6 text-sm text-on-primary/70">
+      <a href="index.html" class="hover:text-on-primary transition-colors">Home</a>
+      <a href="services.html" class="hover:text-on-primary transition-colors">Services</a>
+      <a href="tel:3059647399" class="hover:text-on-primary transition-colors">(305) 964-7399</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    btn.innerHTML = '<span class="material-symbols-outlined">check_circle</span> Sent! We\'ll call you within the hour.';
+    btn.classList.add('bg-green-600');
+    btn.classList.remove('bg-primary-container');
+    btn.disabled = true;
+  }
+</script>
+</body>
+</html>

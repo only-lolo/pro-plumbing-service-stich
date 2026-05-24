@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Pro Plumbing Service & Repair | Miami, FL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#000924","on-primary": "#ffffff","primary-container": "#0f2044","on-primary-container": "#7988b2",
+          "secondary": "#9d4300","on-secondary": "#ffffff","secondary-container": "#fd761a","on-secondary-container": "#5c2400",
+          "surface": "#fbf8fc","surface-bright": "#fbf8fc","surface-container-lowest": "#ffffff","surface-container-low": "#f5f3f6",
+          "surface-container": "#efedf1","surface-container-high": "#e9e7eb","on-surface": "#1b1b1e","on-surface-variant": "#45464e",
+          "outline": "#75777f","outline-variant": "#c5c6cf","background": "#fbf8fc","on-background": "#1b1b1e","surface-variant": "#e4e2e5",
+        },
+        spacing: { "margin-desktop": "48px","margin-mobile": "16px","gutter": "24px","container-max": "1200px","base": "8px" },
+        fontFamily: { sans: ["Inter","sans-serif"] },
+        fontSize: {
+          "display-lg": ["48px",{lineHeight:"1.1",letterSpacing:"-0.02em",fontWeight:"800"}],
+          "display-lg-mobile": ["32px",{lineHeight:"1.2",letterSpacing:"-0.02em",fontWeight:"800"}],
+          "headline-md": ["30px",{lineHeight:"1.3",fontWeight:"700"}],
+          "headline-sm": ["24px",{lineHeight:"1.4",fontWeight:"700"}],
+          "body-lg": ["18px",{lineHeight:"1.6",fontWeight:"400"}],
+          "body-md": ["16px",{lineHeight:"1.6",fontWeight:"400"}],
+          "label-md": ["14px",{lineHeight:"20px",letterSpacing:"0.05em",fontWeight:"600"}],
+          "label-sm": ["12px",{lineHeight:"16px",fontWeight:"600"}],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .icon-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  @keyframes pulse-ring { 0%,100%{box-shadow:0 0 0 0 rgba(253,118,26,0.5)} 50%{box-shadow:0 0 0 10px rgba(253,118,26,0)} }
+  .pulse { animation: pulse-ring 2s infinite; }
+</style>
+</head>
+<body class="bg-background text-on-background font-sans antialiased min-h-screen flex flex-col">
+
+<!-- Emergency Bar -->
+<div class="bg-secondary-container text-on-secondary-container text-sm font-semibold py-2 px-4 text-center">
+  ⚡ 24/7 Emergency Plumbing — <a href="tel:3059647399" class="underline font-bold">(305) 964-7399</a>
+</div>
+
+<!-- Nav -->
+<header class="bg-surface shadow-sm sticky top-0 z-50">
+  <div class="max-w-container-max mx-auto px-margin-desktop h-[72px] flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="material-symbols-outlined text-secondary-container text-[32px]">plumbing</span>
+      <div>
+        <div class="font-bold text-lg leading-tight text-primary">Pro Plumbing</div>
+        <div class="text-xs text-on-surface-variant leading-tight">Service & Repair · Miami, FL</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-on-surface-variant hover:text-secondary transition-colors text-label-md">Home</a>
+      <a href="services.html" class="text-secondary font-bold border-b-2 border-secondary-container pb-1 text-label-md">Services</a>
+      <a href="contact.html" class="text-on-surface-variant hover:text-secondary transition-colors text-label-md">Contact</a>
+      <a href="tel:3059647399" class="pulse bg-secondary-container text-on-secondary-container px-5 py-2.5 rounded-full font-bold text-label-md flex items-center gap-2">
+        <span class="material-symbols-outlined text-[18px]">call</span>(305) 964-7399
+      </a>
+    </nav>
+    <button class="md:hidden text-on-surface" onclick="document.getElementById('mob').classList.toggle('hidden')">
+      <span class="material-symbols-outlined text-[28px]">menu</span>
+    </button>
+  </div>
+  <div id="mob" class="hidden md:hidden bg-surface border-t border-outline-variant px-margin-mobile pb-4">
+    <a href="index.html" class="block py-3 text-on-surface-variant">Home</a>
+    <a href="services.html" class="block py-3 text-secondary font-bold">Services</a>
+    <a href="contact.html" class="block py-3 text-on-surface-variant">Contact</a>
+    <a href="tel:3059647399" class="block mt-2 bg-secondary-container text-on-secondary-container text-center py-3 rounded-lg font-bold">Call (305) 964-7399</a>
+  </div>
+</header>
+
+<main class="flex-grow">
+  <!-- Page Hero -->
+  <section class="w-full max-w-container-max mx-auto px-margin-desktop pt-16 pb-20 text-center">
+    <h1 class="text-display-lg-mobile text-on-surface mb-6">Expert Services for Every Need</h1>
+    <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+      From middle-of-the-night emergencies to routine maintenance, our licensed professionals deliver fast, reliable, and transparent plumbing solutions across all of Miami-Dade.
+    </p>
+  </section>
+
+  <!-- Emergency Feature Bento -->
+  <section class="w-full max-w-container-max mx-auto px-margin-desktop mb-24">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+      <!-- Dark Emergency Card -->
+      <div class="lg:col-span-8 bg-primary-container text-on-primary rounded-xl overflow-hidden relative shadow-lg group min-h-[300px]">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-container to-inverse-surface opacity-90"></div>
+        <div class="relative z-10 p-10 h-full flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-red-500/20 text-red-300 px-3 py-1 rounded-full text-label-sm mb-6 border border-red-400/20">
+              <span class="material-symbols-outlined text-[16px]">warning</span>24/7 Priority Response
+            </div>
+            <h2 class="text-headline-md text-on-primary mb-4">Emergency Repair Services</h2>
+            <p class="text-body-lg text-on-primary/70 max-w-md mb-8">
+              Burst pipes, severe leaks, or overflowing fixtures? We dispatch immediately. Reliable, mess-free solutions when you need them most.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-4 items-center">
+            <a href="tel:3059647399" class="pulse bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold text-label-md flex items-center gap-2 h-[56px] hover:opacity-90 transition-opacity">
+              <span class="material-symbols-outlined">call</span>Call Now — (305) 964-7399
+            </a>
+            <span class="text-on-primary/50 text-label-sm">Response usually under 30 mins</span>
+          </div>
+        </div>
+        <div class="absolute -bottom-10 -right-10 text-on-primary/5 pointer-events-none group-hover:scale-105 transition-transform duration-700">
+          <span class="material-symbols-outlined text-[280px]">plumbing</span>
+        </div>
+      </div>
+      <!-- Trust Side -->
+      <div class="lg:col-span-4 flex flex-col gap-gutter">
+        <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant h-48 overflow-hidden">
+          <img alt="Professional plumber inspecting modern piping" class="w-full h-full object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUs4NJiGrzq6YjK2qIOuT4pOul4fjT9unUgaM6F-A86rXy44mXFyX8lcE9lsOx0SLDz0YDgLu92c-T6rKZdyq0SEUhN8j74qYajgc0W5tXMqZ2ozq5VSXLs_aJcMFxx72MbhbpD0FdwZMMIsL-K6BOjMvyhEMe4bxfyytgLihj98uYmqJO6sEBoHyQZqNsD_BxM6_I_35oxmeaY3Fl3W19RPBxaVqlbpzqybtSbzrbPFU_ZWnhG6PLQWa37PSorTEo5Q4WZGMW8CPZ"/>
+        </div>
+        <div class="bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant p-6 flex-grow flex flex-col justify-center gap-6">
+          <div class="flex items-start gap-4">
+            <div class="bg-surface-container text-secondary-container p-3 rounded-full shrink-0">
+              <span class="material-symbols-outlined icon-fill">verified</span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-on-surface">Licensed & Insured</h3>
+              <p class="text-on-surface-variant text-sm">Full protection for your peace of mind on every job.</p>
+            </div>
+          </div>
+          <div class="w-full h-px bg-outline-variant"></div>
+          <div class="flex items-start gap-4">
+            <div class="bg-surface-container text-secondary-container p-3 rounded-full shrink-0">
+              <span class="material-symbols-outlined">payments</span>
+            </div>
+            <div>
+              <h3 class="font-semibold text-on-surface">Upfront Pricing</h3>
+              <p class="text-on-surface-variant text-sm">No hidden fees. You approve the quote before work begins.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Standard Services Grid -->
+  <section class="w-full max-w-container-max mx-auto px-margin-desktop mb-24">
+    <h2 class="text-headline-sm text-on-surface mb-8 border-b border-outline-variant pb-4">All Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+
+      <div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)] p-8 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+        <div class="bg-surface-container w-16 h-16 rounded-xl flex items-center justify-center text-secondary-container mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[32px]">home_repair_service</span>
+        </div>
+        <h3 class="text-headline-sm text-on-surface mb-3" style="font-size:20px">Residential Plumbing</h3>
+        <p class="text-body-md text-on-surface-variant mb-6 flex-grow">Comprehensive solutions for your home — from leaky faucets and running toilets to complete bathroom pipe refits and kitchen appliance installations.</p>
+        <ul class="mb-6 space-y-2">
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Fixture Repair & Replacement</li>
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Pipe Repair & Replacement</li>
+        </ul>
+        <a href="contact.html" class="w-full block text-center bg-surface-container text-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-colors py-3 rounded-lg font-bold text-label-md border border-outline-variant hover:border-transparent">Get Free Quote</a>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)] p-8 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+        <div class="bg-surface-container w-16 h-16 rounded-xl flex items-center justify-center text-secondary-container mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[32px]">water_heater</span>
+        </div>
+        <h3 class="text-headline-sm text-on-surface mb-3" style="font-size:20px">Water Heaters</h3>
+        <p class="text-body-md text-on-surface-variant mb-6 flex-grow">Expert installation, repair, and maintenance of traditional tank and modern tankless water heating systems. Consistent hot water, year-round.</p>
+        <ul class="mb-6 space-y-2">
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Tankless Upgrades</li>
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Routine Flushing & Maintenance</li>
+        </ul>
+        <a href="contact.html" class="w-full block text-center bg-surface-container text-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-colors py-3 rounded-lg font-bold text-label-md border border-outline-variant hover:border-transparent">Get Free Quote</a>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)] p-8 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+        <div class="bg-surface-container w-16 h-16 rounded-xl flex items-center justify-center text-secondary-container mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[32px]">wash</span>
+        </div>
+        <h3 class="text-headline-sm text-on-surface mb-3" style="font-size:20px">Drain Cleaning</h3>
+        <p class="text-body-md text-on-surface-variant mb-6 flex-grow">Advanced clearing for stubborn clogs. We use professional-grade equipment like hydro-jetting to clear blockages without damaging your pipes.</p>
+        <ul class="mb-6 space-y-2">
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Hydro-Jetting</li>
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Camera Inspections</li>
+        </ul>
+        <a href="contact.html" class="w-full block text-center bg-surface-container text-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-colors py-3 rounded-lg font-bold text-label-md border border-outline-variant hover:border-transparent">Get Free Quote</a>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)] p-8 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+        <div class="bg-surface-container w-16 h-16 rounded-xl flex items-center justify-center text-secondary-container mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[32px]">search</span>
+        </div>
+        <h3 class="text-headline-sm text-on-surface mb-3" style="font-size:20px">Leak Detection & Repair</h3>
+        <p class="text-body-md text-on-surface-variant mb-6 flex-grow">Find and fix hidden leaks before they become expensive damage. We locate the source fast using modern detection equipment.</p>
+        <ul class="mb-6 space-y-2">
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Slab Leak Detection</li>
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Wall & Underground Leaks</li>
+        </ul>
+        <a href="contact.html" class="w-full block text-center bg-surface-container text-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-colors py-3 rounded-lg font-bold text-label-md border border-outline-variant hover:border-transparent">Get Free Quote</a>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)] p-8 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+        <div class="bg-surface-container w-16 h-16 rounded-xl flex items-center justify-center text-secondary-container mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[32px]">toilet</span>
+        </div>
+        <h3 class="text-headline-sm text-on-surface mb-3" style="font-size:20px">Toilet & Fixture Repair</h3>
+        <p class="text-body-md text-on-surface-variant mb-6 flex-grow">Running toilets, broken fixtures, faucet replacements — fast fixes at fair prices with quality parts that last.</p>
+        <ul class="mb-6 space-y-2">
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Toilet Repair & Replacement</li>
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Faucet & Fixture Install</li>
+        </ul>
+        <a href="contact.html" class="w-full block text-center bg-surface-container text-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-colors py-3 rounded-lg font-bold text-label-md border border-outline-variant hover:border-transparent">Get Free Quote</a>
+      </div>
+
+      <div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)] p-8 hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col group">
+        <div class="bg-surface-container w-16 h-16 rounded-xl flex items-center justify-center text-secondary-container mb-6 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-[32px]">route</span>
+        </div>
+        <h3 class="text-headline-sm text-on-surface mb-3" style="font-size:20px">Sewer Line Services</h3>
+        <p class="text-body-md text-on-surface-variant mb-6 flex-grow">Sewer inspections, blockage clearing, and full line repair or replacement. We handle the dirty work so you don't have to.</p>
+        <ul class="mb-6 space-y-2">
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Video Inspection</li>
+          <li class="flex items-center gap-2 text-on-surface-variant text-sm"><span class="material-symbols-outlined text-secondary-container text-[18px]">check</span> Full Line Replacement</li>
+        </ul>
+        <a href="contact.html" class="w-full block text-center bg-surface-container text-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-colors py-3 rounded-lg font-bold text-label-md border border-outline-variant hover:border-transparent">Get Free Quote</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary-container text-on-primary-container py-10 px-margin-desktop mt-auto">
+  <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="font-bold text-headline-sm text-on-primary flex items-center gap-2">
+      <span class="material-symbols-outlined">plumbing</span> Pro Plumbing
+    </div>
+    <div class="text-sm text-on-primary/70 text-center">© 2026 Pro Plumbing Service and Repair Inc. · 14228 SW 136th St, Miami, FL 33186</div>
+    <nav class="flex gap-6 text-sm text-on-primary/70">
+      <a href="index.html" class="hover:text-on-primary transition-colors">Home</a>
+      <a href="contact.html" class="hover:text-on-primary transition-colors">Contact</a>
+      <a href="tel:3059647399" class="hover:text-on-primary transition-colors">(305) 964-7399</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

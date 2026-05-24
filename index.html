@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pro Plumbing Service & Repair | Miami, FL | 24/7 Emergency Plumber</title>
+<meta name="description" content="Miami's trusted plumber for over 15 years. Emergency plumbing, water heaters, leak repair & more. Available 24/7. Call (305) 964-7399."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#000924",
+          "on-primary": "#ffffff",
+          "primary-container": "#0f2044",
+          "on-primary-container": "#7988b2",
+          "secondary": "#9d4300",
+          "on-secondary": "#ffffff",
+          "secondary-container": "#fd761a",
+          "on-secondary-container": "#5c2400",
+          "surface": "#fbf8fc",
+          "surface-bright": "#fbf8fc",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#f5f3f6",
+          "surface-container": "#efedf1",
+          "surface-container-high": "#e9e7eb",
+          "on-surface": "#1b1b1e",
+          "on-surface-variant": "#45464e",
+          "outline": "#75777f",
+          "outline-variant": "#c5c6cf",
+          "background": "#fbf8fc",
+          "on-background": "#1b1b1e",
+          "inverse-surface": "#303033",
+          "surface-variant": "#e4e2e5",
+          "error": "#ba1a1a",
+          "on-error": "#ffffff",
+          "error-container": "#ffdad6",
+        },
+        borderRadius: { DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px" },
+        spacing: {
+          "margin-desktop": "48px",
+          "margin-mobile": "16px",
+          "gutter": "24px",
+          "container-max": "1200px",
+          "base": "8px",
+        },
+        fontFamily: { sans: ["Inter", "sans-serif"] },
+        fontSize: {
+          "display-lg": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "800" }],
+          "display-lg-mobile": ["32px", { lineHeight: "1.2", letterSpacing: "-0.02em", fontWeight: "800" }],
+          "headline-md": ["30px", { lineHeight: "1.3", fontWeight: "700" }],
+          "headline-sm": ["24px", { lineHeight: "1.4", fontWeight: "700" }],
+          "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+          "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+          "label-md": ["14px", { lineHeight: "20px", letterSpacing: "0.05em", fontWeight: "600" }],
+          "label-sm": ["12px", { lineHeight: "16px", fontWeight: "600" }],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .icon-fill { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  html { scroll-behavior: smooth; }
+  @keyframes pulse-ring {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(253,118,26,0.5); }
+    50% { box-shadow: 0 0 0 10px rgba(253,118,26,0); }
+  }
+  .pulse { animation: pulse-ring 2s infinite; }
+</style>
+</head>
+<body class="bg-background text-on-background font-sans antialiased">
+
+<!-- Emergency Top Bar -->
+<div class="bg-secondary-container text-on-secondary-container text-sm font-semibold py-2 px-4 text-center">
+  ⚡ 24/7 Emergency Plumbing Available — Call Now:
+  <a href="tel:3059647399" class="underline font-bold ml-1">(305) 964-7399</a>
+</div>
+
+<!-- Sticky Nav -->
+<header class="bg-surface shadow-sm sticky top-0 z-50">
+  <div class="max-w-container-max mx-auto px-margin-desktop h-[72px] flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3">
+      <span class="material-symbols-outlined text-secondary-container text-[32px]">plumbing</span>
+      <div>
+        <div class="font-bold text-lg leading-tight text-primary">Pro Plumbing</div>
+        <div class="text-xs text-on-surface-variant leading-tight">Service & Repair · Miami, FL</div>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-8">
+      <a href="index.html" class="text-secondary font-bold border-b-2 border-secondary-container pb-1 text-label-md">Home</a>
+      <a href="services.html" class="text-on-surface-variant hover:text-secondary transition-colors text-label-md">Services</a>
+      <a href="contact.html" class="text-on-surface-variant hover:text-secondary transition-colors text-label-md">Contact</a>
+      <a href="tel:3059647399" class="pulse bg-secondary-container text-on-secondary-container px-5 py-2.5 rounded-full font-bold text-label-md flex items-center gap-2">
+        <span class="material-symbols-outlined text-[18px]">call</span>(305) 964-7399
+      </a>
+    </nav>
+    <button class="md:hidden text-on-surface" onclick="document.getElementById('mob').classList.toggle('hidden')">
+      <span class="material-symbols-outlined text-[28px]">menu</span>
+    </button>
+  </div>
+  <div id="mob" class="hidden md:hidden bg-surface border-t border-outline-variant px-margin-mobile pb-4">
+    <a href="index.html" class="block py-3 text-secondary font-bold">Home</a>
+    <a href="services.html" class="block py-3 text-on-surface-variant">Services</a>
+    <a href="contact.html" class="block py-3 text-on-surface-variant">Contact</a>
+    <a href="tel:3059647399" class="block mt-2 bg-secondary-container text-on-secondary-container text-center py-3 rounded-lg font-bold">Call (305) 964-7399</a>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="relative w-full min-h-[600px] flex items-center overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <img alt="Professional plumber working in a modern Miami home" class="w-full h-full object-cover object-center"
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGCAou5yBx3U3QjRNUBYTvcUGE-thrmwBk9bNMjyL5l5YPSV2pHSxBTzFUP4iZHvuQg7Utz78AdYBs3mOPkBHsWLsk4t798zaQJFVdnh_mxccGwY1rZ22LINBPe1PCMn0YoHkhxJ5ibBi4kU0jEvoyVvVoU7r7lH8jxKd6qA3diEeG0leQuaHADustnsUaJFylo4un3f-9-VQzKt5n9GbXjFxXKDXqrJH8dvPhQP_I9iMDGgYP4KI2hEj8jLck6mocxl6EUvlFMVbl"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-primary-container/95 via-primary-container/80 to-transparent"></div>
+  </div>
+  <div class="relative z-10 w-full max-w-container-max mx-auto px-margin-desktop py-20">
+    <div class="max-w-2xl space-y-6">
+      <span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-label-sm uppercase tracking-widest">
+        Emergency Service Available 24/7
+      </span>
+      <h1 class="text-display-lg text-on-primary font-extrabold leading-tight">
+        Plumbing problems<br/>solved, <span class="text-secondary-container">fast.</span>
+      </h1>
+      <p class="text-body-lg text-on-primary/80 max-w-xl">
+        Reliable, transparent, and professional plumbing services. 15+ years serving Miami-Dade. Upfront pricing and a 100% satisfaction guarantee on every job.
+      </p>
+      <div class="flex flex-wrap gap-4 pt-2">
+        <a href="tel:3059647399" class="pulse bg-secondary-container text-on-secondary-container font-bold px-8 py-4 rounded-lg flex items-center gap-2 text-label-md h-[56px] hover:opacity-90 transition-opacity">
+          <span class="material-symbols-outlined">call</span>Call Now — Free
+        </a>
+        <a href="services.html" class="border-2 border-on-primary/40 text-on-primary font-bold px-8 py-4 rounded-lg flex items-center gap-2 text-label-md h-[56px] hover:bg-on-primary/10 transition-colors">
+          View Services
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust Bar -->
+<section class="bg-secondary-container text-on-secondary-container py-3 px-4">
+  <div class="max-w-container-max mx-auto flex flex-wrap justify-center gap-6 text-sm font-semibold">
+    <span>✓ Licensed & Insured</span>
+    <span>✓ Same-Day Service</span>
+    <span>✓ Free Estimates</span>
+    <span>✓ No Hidden Fees</span>
+    <span>✓ All Work Guaranteed</span>
+  </div>
+</section>
+
+<!-- Services Bento -->
+<section class="py-24 px-margin-desktop bg-surface-bright">
+  <div class="max-w-container-max mx-auto">
+    <div class="text-center mb-14">
+      <h2 class="text-display-lg-mobile text-primary mb-4">Our Main Services</h2>
+      <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Comprehensive solutions for every plumbing need, delivered with precision and care.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Emergency - spans 2 col -->
+      <div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-8 border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)] hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined icon-fill text-on-secondary-container text-[24px]">water_drop</span>
+        </div>
+        <h3 class="text-headline-md text-primary mb-3">Emergency Repair</h3>
+        <p class="text-body-md text-on-surface-variant mb-6 max-w-md">24/7 rapid response for burst pipes, severe leaks, and immediate plumbing crises. We arrive ready to fix the problem immediately.</p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2 text-on-surface-variant text-body-md">
+            <span class="material-symbols-outlined text-secondary-container text-[20px]">check_circle</span> 30-minute response time
+          </li>
+          <li class="flex items-center gap-2 text-on-surface-variant text-body-md">
+            <span class="material-symbols-outlined text-secondary-container text-[20px]">check_circle</span> No hidden emergency fees
+          </li>
+        </ul>
+      </div>
+      <!-- Drain -->
+      <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)] hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-[24px]">build</span>
+        </div>
+        <h3 class="text-headline-sm text-primary mb-3">Drain Cleaning</h3>
+        <p class="text-body-md text-on-surface-variant">Professional snaking and hydro-jetting to clear stubborn clogs and restore full flow.</p>
+      </div>
+      <!-- Water Heater -->
+      <div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)] hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-[24px]">thermostat</span>
+        </div>
+        <h3 class="text-headline-sm text-primary mb-3">Water Heaters</h3>
+        <p class="text-body-md text-on-surface-variant">Installation, repair, and maintenance of traditional and tankless systems.</p>
+      </div>
+      <!-- System Install - spans 2 col -->
+      <div class="md:col-span-2 bg-surface-container-lowest rounded-xl p-8 border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)] hover:shadow-md transition-shadow">
+        <div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined icon-fill text-on-secondary-container text-[24px]">settings</span>
+        </div>
+        <h3 class="text-headline-md text-primary mb-3">Pipe Repair & Replacement</h3>
+        <p class="text-body-md text-on-surface-variant">Complete pipe system repair and replacement for residential and commercial properties, adhering strictly to Florida plumbing codes.</p>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <a href="services.html" class="inline-block bg-primary-container text-on-primary px-8 py-4 rounded-lg font-bold text-label-md hover:opacity-90 transition-opacity">
+        See All Services
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Why Us -->
+<section class="py-24 px-margin-desktop bg-surface">
+  <div class="max-w-container-max mx-auto flex flex-col md:flex-row gap-16 items-center">
+    <div class="md:w-1/2 space-y-8">
+      <div>
+        <h2 class="text-display-lg-mobile text-primary mb-4">Why Choose Pro Plumbing?</h2>
+        <p class="text-body-lg text-on-surface-variant">We believe in doing the job right the first time. Our commitment to excellence is reflected in our guarantees and our team.</p>
+      </div>
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <div class="w-12 h-12 shrink-0 rounded-full bg-surface-container flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary-container text-[24px]">schedule</span>
+          </div>
+          <div>
+            <h4 class="text-headline-sm text-primary">30-Min Arrival Guarantee</h4>
+            <p class="text-body-md text-on-surface-variant">For emergency calls, we guarantee arrival within 30 minutes, or the service fee is waived.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-12 h-12 shrink-0 rounded-full bg-surface-container flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary-container text-[24px]">verified_user</span>
+          </div>
+          <div>
+            <h4 class="text-headline-sm text-primary">Licensed & Insured Pros</h4>
+            <p class="text-body-md text-on-surface-variant">Every technician is fully licensed, background-checked, and highly trained in Florida plumbing codes.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-12 h-12 shrink-0 rounded-full bg-surface-container flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary-container text-[24px]">payments</span>
+          </div>
+          <div>
+            <h4 class="text-headline-sm text-primary">Upfront Pricing — No Surprises</h4>
+            <p class="text-body-md text-on-surface-variant">You approve the exact cost before we start any work. What we quote is what you pay.</p>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <div class="w-12 h-12 shrink-0 rounded-full bg-surface-container flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary-container text-[24px]">star</span>
+          </div>
+          <div>
+            <h4 class="text-headline-sm text-primary">15+ Years Serving Miami-Dade</h4>
+            <p class="text-body-md text-on-surface-variant">Trusted by homeowners across Kendall, Homestead, Hialeah, Doral, Coral Gables and beyond.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="md:w-1/2 w-full h-[500px] rounded-2xl overflow-hidden shadow-lg">
+      <img alt="Confident professional plumber Adrian, owner of Pro Plumbing Miami" class="w-full h-full object-cover"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlxy81PXXulfO7YfN9jHb19gqUY8HpU0VJKvXT2pxWa88YLr5lY7O2_8USOKFp12lxdfdjNHLpLmHe8351VTxMwlKLMxSIDf70GAtQQbZ4gqITpKtdycDxhpuLrfESnPZdhUE4oEHIaM0eYaRzt4pSaNPCV3dsuSWClgwmgHMuURORtWc-wiPf5fHptQ_JbjxYUr_cPkPQt4C9aI9y1i30pa4yPlC5UjDqJ-l7nZBrB6QKe0AGl5z6aQPiq9hqIalOqlMJPX_b23r8"/>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-24 px-margin-desktop bg-surface-container-low">
+  <div class="max-w-container-max mx-auto">
+    <div class="text-center mb-14">
+      <h2 class="text-display-lg-mobile text-primary mb-3">What Miami Says</h2>
+      <div class="flex justify-center gap-1 text-secondary-container text-xl mb-2">★★★★☆</div>
+      <p class="text-on-surface-variant text-body-md">Trusted by homeowners across Miami-Dade for over 15 years</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-surface-container-lowest rounded-xl p-7 border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)]">
+        <div class="flex gap-1 text-secondary-container mb-4">★★★★★</div>
+        <p class="text-on-surface-variant text-body-md italic mb-5">"Adrian is my go-to choice when I want a knowledgeable, professional plumber. He did not disappoint. Highly recommend!"</p>
+        <div class="flex items-center gap-3">
+          <div class="bg-surface-container w-10 h-10 rounded-full flex items-center justify-center font-bold text-primary">M</div>
+          <div>
+            <div class="font-semibold text-sm text-on-surface">Maria R.</div>
+            <div class="text-on-surface-variant text-xs">Miami, FL — Nextdoor</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl p-7 border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)]">
+        <div class="flex gap-1 text-secondary-container mb-4">★★★★★</div>
+        <p class="text-on-surface-variant text-body-md italic mb-5">"Trustworthy and reliable. Fixed our leaky pipes quickly, the price was fair, and there were zero surprises. Won't call anyone else."</p>
+        <div class="flex items-center gap-3">
+          <div class="bg-surface-container w-10 h-10 rounded-full flex items-center justify-center font-bold text-primary">J</div>
+          <div>
+            <div class="font-semibold text-sm text-on-surface">James T.</div>
+            <div class="text-on-surface-variant text-xs">Kendall, FL — Nextdoor</div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest rounded-xl p-7 border border-outline-variant shadow-[0_4px_20px_rgba(15,23,42,0.05)]">
+        <div class="flex gap-1 text-secondary-container mb-4">★★★★★</div>
+        <p class="text-on-surface-variant text-body-md italic mb-5">"Called at 11pm for an emergency. Adrian was at my house within the hour and had everything fixed before midnight. Absolute lifesaver."</p>
+        <div class="flex items-center gap-3">
+          <div class="bg-surface-container w-10 h-10 rounded-full flex items-center justify-center font-bold text-primary">C</div>
+          <div>
+            <div class="font-semibold text-sm text-on-surface">Carlos M.</div>
+            <div class="text-on-surface-variant text-xs">Homestead, FL — Nextdoor</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="bg-primary-container text-on-primary py-20 px-margin-desktop text-center">
+  <h2 class="text-display-lg-mobile font-extrabold mb-4">Got a Plumbing Emergency?</h2>
+  <p class="text-on-primary/70 text-body-lg mb-8">Water damage gets worse by the hour. We're ready 24/7 throughout Miami-Dade County.</p>
+  <a href="tel:3059647399" class="pulse inline-block bg-secondary-container text-on-secondary-container font-bold px-10 py-5 rounded-full text-xl hover:opacity-90 transition-opacity">
+    <span class="material-symbols-outlined align-middle mr-2">call</span>Call (305) 964-7399
+  </a>
+  <p class="mt-4 text-on-primary/50 text-sm">Free estimates · No overtime charges · All work guaranteed</p>
+</section>
+
+<!-- Footer -->
+<footer class="bg-primary-container text-on-primary-container py-10 px-margin-desktop">
+  <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+    <div class="font-bold text-headline-sm text-on-primary flex items-center gap-2">
+      <span class="material-symbols-outlined">plumbing</span> Pro Plumbing
+    </div>
+    <div class="text-sm text-on-primary/70 text-center">
+      © 2026 Pro Plumbing Service and Repair Inc. · 14228 SW 136th St, Miami, FL 33186
+    </div>
+    <nav class="flex gap-6 text-sm text-on-primary/70">
+      <a href="services.html" class="hover:text-on-primary transition-colors">Services</a>
+      <a href="contact.html" class="hover:text-on-primary transition-colors">Contact</a>
+      <a href="tel:3059647399" class="hover:text-on-primary transition-colors">(305) 964-7399</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
