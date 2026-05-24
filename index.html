@@ -5,6 +5,16 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Pro Plumbing Service & Repair | Miami, FL | 24/7 Emergency Plumber</title>
 <meta name="description" content="Miami's trusted plumber for over 15 years. Emergency plumbing, water heaters, leak repair & more. Available 24/7. Call (305) 964-7399."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://pro-plumbing-service.vercel.app/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://pro-plumbing-service.vercel.app/"/>
+<meta property="og:title" content="Pro Plumbing Service & Repair | Miami, FL | 24/7 Emergency Plumber"/>
+<meta property="og:description" content="Miami's trusted plumber for over 15 years. Emergency plumbing, water heaters, leak repair & more. Available 24/7. Call (305) 964-7399."/>
+<meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuCGCAou5yBx3U3QjRNUBYTvcUGE-thrmwBk9bNMjyL5l5YPSV2pHSxBTzFUP4iZHvuQg7Utz78AdYBs3mOPkBHsWLsk4t798zaQJFVdnh_mxccGwY1rZ22LINBPe1PCMn0YoHkhxJ5ibBi4kU0jEvoyVvVoU7r7lH8jxKd6qA3diEeG0leQuaHADustnsUaJFylo4un3f-9-VQzKt5n9GbXjFxXKDXqrJH8dvPhQP_I9iMDGgYP4KI2hEj8jLck6mocxl6EUvlFMVbl"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Plumber","name":"Pro Plumbing Service and Repair","@id":"https://pro-plumbing-service.vercel.app","url":"https://pro-plumbing-service.vercel.app","telephone":"+13059647399","address":{"@type":"PostalAddress","streetAddress":"14228 SW 136th St","addressLocality":"Miami","addressRegion":"FL","postalCode":"33186","addressCountry":"US"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"},"priceRange":"$$","areaServed":{"@type":"City","name":"Miami"}}</script>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
@@ -153,10 +163,32 @@
   </div>
 </section>
 
+<!-- Stats Counter -->
+<section class="py-14 px-margin-desktop bg-surface-container-lowest border-b border-outline-variant">
+  <div class="max-w-container-max mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div data-aos="fade-up">
+      <div class="text-5xl font-extrabold text-secondary-container" id="stat-years">0</div>
+      <div class="text-on-surface-variant text-body-md mt-2">Years in Business</div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="100">
+      <div class="text-5xl font-extrabold text-secondary-container" id="stat-jobs">0</div>
+      <div class="text-on-surface-variant text-body-md mt-2">Jobs Completed</div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="200">
+      <div class="text-5xl font-extrabold text-secondary-container">24/7</div>
+      <div class="text-on-surface-variant text-body-md mt-2">Emergency Response</div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="300">
+      <div class="text-5xl font-extrabold text-secondary-container">100%</div>
+      <div class="text-on-surface-variant text-body-md mt-2">Satisfaction Guarantee</div>
+    </div>
+  </div>
+</section>
+
 <!-- Services Bento -->
 <section class="py-24 px-margin-desktop bg-surface-bright">
   <div class="max-w-container-max mx-auto">
-    <div class="text-center mb-14">
+    <div class="text-center mb-14" data-aos="fade-up">
       <h2 class="text-display-lg-mobile text-primary mb-4">Our Main Services</h2>
       <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto">Comprehensive solutions for every plumbing need, delivered with precision and care.</p>
     </div>
@@ -310,6 +342,63 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="py-24 px-margin-desktop bg-surface-bright">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-14" data-aos="fade-up">
+      <h2 class="text-display-lg-mobile text-primary mb-4">Common Questions</h2>
+      <p class="text-body-lg text-on-surface-variant">Everything you need to know before calling.</p>
+    </div>
+    <div class="space-y-3" id="faq-list">
+      <div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-aos="fade-up">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold text-on-surface text-body-lg">
+          Do you offer 24/7 emergency service?
+          <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-5 text-on-surface-variant text-body-md">
+          Yes — we're available 24 hours a day, 7 days a week including holidays. Emergency calls are answered immediately and we guarantee arrival within 30 minutes in the Miami-Dade area.
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="50">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold text-on-surface text-body-lg">
+          How much does a service call cost?
+          <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-5 text-on-surface-variant text-body-md">
+          We provide free estimates before any work begins. Our pricing is upfront with no hidden fees — you'll know the exact cost before we pick up a wrench.
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold text-on-surface text-body-lg">
+          Are you licensed and insured?
+          <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-5 text-on-surface-variant text-body-md">
+          Absolutely. We are fully licensed by the state of Florida and carry comprehensive liability insurance and workers' compensation on every job. All technicians are background-checked.
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="150">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold text-on-surface text-body-lg">
+          What areas do you serve?
+          <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-5 text-on-surface-variant text-body-md">
+          We serve all of Miami-Dade County — Miami, Kendall, Homestead, Hialeah, Doral, Coral Gables, South Miami, and surrounding communities.
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+        <button onclick="toggleFaq(this)" class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold text-on-surface text-body-lg">
+          Do you guarantee your work?
+          <span class="material-symbols-outlined transition-transform duration-300">expand_more</span>
+        </button>
+        <div class="faq-answer hidden px-6 pb-5 text-on-surface-variant text-body-md">
+          Yes — 100% satisfaction guarantee on all labor. If a repair fails within 90 days, we come back and fix it at no charge.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA Banner -->
 <section class="bg-primary-container text-on-primary py-20 px-margin-desktop text-center">
   <h2 class="text-display-lg-mobile font-extrabold mb-4">Got a Plumbing Emergency?</h2>
@@ -337,5 +426,44 @@
   </div>
 </footer>
 
+<!-- Mobile floating call button -->
+<a href="tel:3059647399" class="md:hidden fixed bottom-5 right-5 z-50 bg-secondary-container text-on-secondary-container px-5 py-3 rounded-full font-bold shadow-xl flex items-center gap-2 pulse">
+  <span class="material-symbols-outlined text-[20px]">call</span> Call Now
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ once: true, duration: 700, offset: 60 });
+
+  function animateCounter(el, target, suffix) {
+    let val = 0;
+    const step = Math.ceil(target / 60);
+    const t = setInterval(() => {
+      val += step;
+      if (val >= target) { val = target; clearInterval(t); }
+      el.textContent = val + (suffix || '');
+    }, 25);
+  }
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        animateCounter(document.getElementById('stat-years'), 15, '+');
+        animateCounter(document.getElementById('stat-jobs'), 500, '+');
+        statsObserver.disconnect();
+      }
+    });
+  }, { threshold: 0.5 });
+  const statsEl = document.getElementById('stat-years');
+  if (statsEl) statsObserver.observe(statsEl.closest('section'));
+
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const icon = btn.querySelector('.material-symbols-outlined');
+    const isOpen = !answer.classList.contains('hidden');
+    document.querySelectorAll('.faq-answer').forEach(a => a.classList.add('hidden'));
+    document.querySelectorAll('#faq-list .material-symbols-outlined').forEach(i => i.style.transform = '');
+    if (!isOpen) { answer.classList.remove('hidden'); icon.style.transform = 'rotate(180deg)'; }
+  }
+</script>
 </body>
 </html>
